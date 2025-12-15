@@ -1,2 +1,2 @@
 # StockVision
-Sttock Market Replica
+Stock Market Replica
