@@ -1,0 +1,32 @@
+/* Global styles */
+
+
+body { margin: 0; }
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: #fff;
+  color: #111;
+}
+
+/* Basic layout helpers */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* simple button */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* add more styles as needed */
