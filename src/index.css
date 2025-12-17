@@ -1,13 +1,94 @@
 /* Global styles */
-
-
 body { margin: 0; }
 html, body, #root {
   height: 100%;
   margin: 0;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  background: #fff;
-  color: #111;
+  background: #020617;
+  color: #f1f5f9;
+}
+
+/* Light Mode Styles */
+html.light-mode {
+  background: #ffffff;
+}
+
+html.light-mode body,
+html.light-mode #root {
+  background: #ffffff;
+  color: #0f172a;
+}
+
+/* Navbar Light Mode */
+html.light-mode nav {
+  background: #ffffff !important;
+  border-bottom-color: #e2e8f0 !important;
+}
+
+html.light-mode nav h1,
+html.light-mode nav a {
+  color: #0f172a !important;
+}
+
+html.light-mode nav a:hover {
+  color: #f59e0b !important;
+}
+
+/* Cards Light Mode */
+html.light-mode .bg-slate-950 {
+  background: #f8fafc !important;
+}
+
+html.light-mode .bg-slate-900,
+html.light-mode .bg-slate-900\/50,
+html.light-mode .bg-slate-900\/80 {
+  background: #ffffff !important;
+  border-color: #e2e8f0 !important;
+}
+
+html.light-mode .bg-slate-800,
+html.light-mode .bg-slate-800\/50 {
+  background: #f1f5f9 !important;
+}
+
+html.light-mode .border-slate-800,
+html.light-mode .border-slate-700 {
+  border-color: #e2e8f0 !important;
+}
+
+/* Text Light Mode */
+html.light-mode .text-slate-100,
+html.light-mode .text-slate-200 {
+  color: #0f172a !important;
+}
+
+html.light-mode .text-slate-300,
+html.light-mode .text-slate-400 {
+  color: #475569 !important;
+}
+
+html.light-mode .text-slate-500 {
+  color: #64748b !important;
+}
+
+/* Keep accent colors in light mode */
+html.light-mode .text-amber-400,
+html.light-mode .text-amber-500 {
+  color: #f59e0b !important;
+}
+
+html.light-mode .bg-amber-500 {
+  background: #f59e0b !important;
+}
+
+html.light-mode .text-rose-400 {
+  color: #f43f5e !important;
+}
+
+/* Footer Light Mode */
+html.light-mode footer {
+  background: #ffffff !important;
+  border-top-color: #e2e8f0 !important;
 }
 
 /* Basic layout helpers */
@@ -22,11 +103,19 @@ html, body, #root {
   display: inline-block;
   padding: 0.5rem 1rem;
   border-radius: 6px;
-  background: #2563eb;
+  background: #f59e0b;
   color: white;
   text-decoration: none;
   border: none;
   cursor: pointer;
 }
 
-/* add more styles as needed */
+/* Chart styles for light mode */
+html.light-mode .recharts-cartesian-grid-horizontal line,
+html.light-mode .recharts-cartesian-grid-vertical line {
+  stroke: #e2e8f0 !important;
+}
+
+html.light-mode .recharts-text {
+  fill: #64748b !important;
+}

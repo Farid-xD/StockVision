@@ -9,10 +9,10 @@ export default function Hero() {
     >
       <img
         src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3"
+        alt="Investment"
         className="absolute inset-0 w-full h-full object-cover"
       />
 
-      {/* Opaque overlay */}
       <div className="absolute inset-0 bg-slate-900/70" />
 
       <div className="relative p-10 text-white">
