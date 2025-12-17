@@ -69,4 +69,5 @@ StockVision is a modern, interactive stock market dashboard built with **React**
 
 ```bash
 git clone https://github.com/Farid-xD/StockVision.git
+
 cd StockVision
