@@ -230,9 +230,13 @@ Before you begin, ensure you have the following installed:
 ```
 stockvision/
 ├── public/
+|   ├── uraan-logo.png
 │   └── vite.svg
 ├── src/
 │   ├── Components/
+|   |   ├── Hero.jsx
+|   |   ├── InvesttmentCard.jsx
+|   |   ├── ProtectedRoute.jsx
 │   │   ├── Navbar.jsx              # Navigation bar with auth
 │   │   ├── Footer.jsx              # Footer with links
 │   │   ├── StockTable.jsx          # Market overview table
@@ -356,7 +360,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 <div align="center">
   <img src="assets/uraan-logo.png" alt="Uraan Studios" width="80" height="80" style="border-radius:20px;" />
->>>>>>> dddbf82 (Readme File Updated!)
   <h3>Uraan Studios</h3>
   <p>Innovative Software Development Studio</p>
   <p>
