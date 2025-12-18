@@ -11,16 +11,8 @@
   <strong>A modern, AI-driven stock market analysis platform with real-time insights, predictive analytics, and portfolio management.</strong>
 </p>
 
-<p align="center">
-  <a href="#features">Features</a> •
-  <a href="#demo">Demo</a> •
-  <a href="#tech-stack">Tech Stack</a> •
-  <a href="#getting-started">Getting Started</a> •
-  <a href="#usage">Usage</a> •
-  <a href="#screenshots">Screenshots</a>
-</p>
 
----
+![alt text](image.png)
 
 ## 🎯 Use Case
 
@@ -222,45 +214,7 @@ Before you begin, ensure you have the following installed:
 
 ---
 
-## 📸 Screenshots
 
-### Home Page - Investment Calculator
-![Home Page](https://via.placeholder.com/800x400/0f172a/f59e0b?text=Home+Page+-+Investment+Calculator)
-
-### AI Stock Predictor
-![AI Predict](https://via.placeholder.com/800x400/0f172a/f59e0b?text=AI+Predictor+-+30+Day+Forecast)
-
-### Market Watch
-![Market Watch](https://via.placeholder.com/800x400/0f172a/f59e0b?text=Market+Watch+-+BUY%2FSELL+Signals)
-
-### Personal Dashboard
-![Dashboard](https://via.placeholder.com/800x400/0f172a/f59e0b?text=Dashboard+-+Portfolio+Analytics)
-
----
-
-## 🎨 Design System
-
-### Color Palette
-
-```css
-/* Primary Background */
---slate-950: #020617   /* Main background */
---slate-900: #0f172a   /* Card background */
---slate-800: #1e293b   /* Borders & dividers */
-
-/* Text Colors */
---slate-100: #f1f5f9   /* Primary text */
---slate-400: #94a3b8   /* Secondary text */
-
-/* Accent Colors */
---amber-500: #f59e0b   /* Primary accent */
---amber-400: #fbbf24   /* Highlights */
-
-/* Status Colors */
---rose-400: #fb7185    /* Negative/Loss */
---blue-500: #3b82f6    /* Info */
---green-500: #22c55e   /* Success (limited use) */
-```
 
 ### Typography
 
@@ -397,21 +351,11 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ---
 
-## 👨‍💻 Author
-
-**Farid Muhammad**
-
-- Portfolio: [uraanstudios.vercel.app](https://uraanstudios.vercel.app)
-- LinkedIn: [farid-muhammad](https://linkedin.com/in/farid-muhammad-3238132ab/)
-- GitHub: [@Farid-xD](https://github.com/Farid-xD)
-- Email: support@uraanstudios.com
-
----
 
 ## 🏢 Built By
 
 <div align="center">
-  <img src="https://via.placeholder.com/120x120/f59e0b/0f172a?text=US" alt="Uraan Studios" width="80" height="80" style="border-radius: 20px;" />
+  <img src="![alt text](image-1.png)" alt="Uraan Studios" width="80" height="80" style="border-radius: 20px;" />
   <h3>Uraan Studios</h3>
   <p>Innovative Software Development Studio</p>
   <p>
@@ -420,16 +364,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
     <a href="mailto:support@uraanstudios.com">Email</a>
   </p>
 </div>
-
----
-
-## 🙏 Acknowledgments
-
-- **Clerk** for authentication services
-- **TailwindCSS** for the amazing design system
-- **Recharts** for beautiful data visualizations
-- **Framer Motion** for smooth animations
-- **Unsplash** for high-quality images
 
 ---
 
