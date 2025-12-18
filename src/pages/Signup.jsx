@@ -34,7 +34,7 @@ export default function Signup() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl w-full items-center relative z-10">
         
-        {/* LEFT - Brand with Animated Logo */}
+        {/* LEFT - Brand with Logo */}
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
@@ -42,7 +42,7 @@ export default function Signup() {
           className="flex items-center justify-center text-white order-2 md:order-1"
         >
           <div className="text-center">
-            {/* Animated Logo */}
+            {/* Logo matching navbar */}
             <motion.div
               initial={{ scale: 0, rotate: 180 }}
               animate={{ scale: 1, rotate: 0 }}
@@ -65,28 +65,10 @@ export default function Signup() {
                 }}
                 className="relative"
               >
-                <div className="w-24 h-24 bg-gradient-to-br from-purple-600 via-blue-500 to-teal-400 rounded-2xl flex items-center justify-center shadow-2xl shadow-purple-500/50">
-                  <svg className="w-14 h-14 text-white" viewBox="0 0 24 24" fill="none">
-                    <motion.path
-                      initial={{ pathLength: 0 }}
-                      animate={{ pathLength: 1 }}
-                      transition={{ duration: 2, repeat: Infinity, repeatDelay: 1 }}
-                      d="M3 3L8 8L13 3L18 8L23 3"
-                      stroke="currentColor"
-                      strokeWidth="2.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <motion.path
-                      initial={{ pathLength: 0 }}
-                      animate={{ pathLength: 1 }}
-                      transition={{ duration: 2, delay: 0.3, repeat: Infinity, repeatDelay: 1 }}
-                      d="M3 12L8 17L13 12L18 17L23 12"
-                      stroke="currentColor"
-                      strokeWidth="2.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
+                <div className="w-24 h-24 bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl flex items-center justify-center shadow-2xl shadow-purple-500/50">
+                  <svg className="w-14 h-14 text-slate-950" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                    <path d="M3 3L21 21M3 21L21 3" strokeLinecap="round"/>
+                    <polyline points="3,17 9,11 15,14 21,8" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </div>
                 
@@ -101,7 +83,7 @@ export default function Signup() {
                     repeat: Infinity,
                     ease: "easeInOut"
                   }}
-                  className="absolute inset-0 bg-gradient-to-br from-purple-600 to-teal-400 rounded-2xl blur-xl -z-10"
+                  className="absolute inset-0 bg-gradient-to-br from-purple-600 to-amber-500 rounded-2xl blur-xl -z-10"
                 />
               </motion.div>
             </motion.div>

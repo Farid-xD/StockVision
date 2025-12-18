@@ -9,6 +9,9 @@ import Signup from "./pages/Signup";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import FutureTrading from "./pages/FutureTrading";
+import AiPredict from "./pages/AiPredict";
+import MarketWatch from "./pages/MarketWatch";
+import Dashboard from "./pages/Dashboard";
 
 export default function App() {
   return (
@@ -18,11 +21,15 @@ export default function App() {
         
         <main className="flex-grow">
           <Routes>
-            {/* Auth pages */}
+            {/* Auth pages - Public */}
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
 
-            {/* Protected Home - redirect to login if not signed in */}
+            {/* Public pages */}
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+
+            {/* Protected Home */}
             <Route 
               path="/" 
               element={
@@ -37,7 +44,52 @@ export default function App() {
               } 
             />
             
-            {/* Protected Future Trading - redirect to login if not signed in */}
+            {/* Protected Dashboard */}
+            <Route 
+              path="/dashboard" 
+              element={
+                <>
+                  <SignedIn>
+                    <Dashboard />
+                  </SignedIn>
+                  <SignedOut>
+                    <Navigate to="/login" replace />
+                  </SignedOut>
+                </>
+              } 
+            />
+
+            {/* Protected AI Predict */}
+            <Route 
+              path="/ai-predict" 
+              element={
+                <>
+                  <SignedIn>
+                    <AiPredict />
+                  </SignedIn>
+                  <SignedOut>
+                    <Navigate to="/login" replace />
+                  </SignedOut>
+                </>
+              } 
+            />
+
+            {/* Protected Market Watch */}
+            <Route 
+              path="/market-watch" 
+              element={
+                <>
+                  <SignedIn>
+                    <MarketWatch />
+                  </SignedIn>
+                  <SignedOut>
+                    <Navigate to="/login" replace />
+                  </SignedOut>
+                </>
+              } 
+            />
+
+            {/* Protected Future Trading */}
             <Route 
               path="/future" 
               element={
@@ -52,11 +104,7 @@ export default function App() {
               } 
             />
 
-            {/* Public pages */}
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-
-            {/* Catch all */}
+            {/* Catch all - redirect to home */}
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>

@@ -20,18 +20,14 @@ export default function Navbar() {
       className="bg-slate-950 border-b border-slate-800 sticky top-0 z-50"
     >
       <div className="max-w-7xl mx-auto px-8 py-2.5 flex justify-between items-center">
-        {/* Logo */}
+        {/* Logo - Using exact image logo */}
         <Link to="/" className="flex items-center gap-2 group">
-          <motion.div
-            whileHover={{ rotate: 180 }}
-            transition={{ duration: 0.4 }}
-            className="w-7 h-7 bg-gradient-to-br from-amber-400 to-orange-500 rounded-lg flex items-center justify-center shadow-lg"
-          >
-            <svg className="w-4 h-4 text-slate-950" viewBox="0 0 24 24" fill="none">
-              <path d="M3 17L9 11L13 15L21 7" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-              <path d="M14 7H21V14" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+          <div className="w-8 h-8 bg-gradient-to-br from-amber-500 to-orange-600 rounded-lg flex items-center justify-center shadow-lg">
+            <svg className="w-5 h-5 text-slate-950" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+              <path d="M3 3L21 21M3 21L21 3" strokeLinecap="round"/>
+              <polyline points="3,17 9,11 15,14 21,8" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
-          </motion.div>
+          </div>
           
           <h1 className="text-lg font-bold text-slate-100 group-hover:text-amber-400 transition-colors">
             StockVision
