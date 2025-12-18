@@ -355,7 +355,8 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ## 🏢 Built By
 
 <div align="center">
-  <img src="![alt text](image-1.png)" alt="Uraan Studios" width="80" height="80" style="border-radius: 20px;" />
+  <img src="<img width="200" height="200" alt="uraan logo" src="https://github.com/user-attachments/assets/14cfab44-3489-4cf6-8c18-a4c5f90ddebc" />
+" alt="Uraan Studios" width="80" height="80" style="border-radius: 20px;" />
   <h3>Uraan Studios</h3>
   <p>Innovative Software Development Studio</p>
   <p>
