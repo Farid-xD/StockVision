@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { SignedIn, SignedOut } from "@clerk/clerk-react";
 
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
@@ -18,10 +17,17 @@ export default function App() {
     <BrowserRouter>
       <div className="flex flex-col min-h-screen">
         <Navbar />
-        
+
         <main className="flex-grow">
           <Routes>
-            {/* Auth pages - Public */}
+            {/* Public */}
+            <Route path="/" element={<Home />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/ai-predict" element={<AiPredict />} />
+            <Route path="/market-watch" element={<MarketWatch />} />
+            <Route path="/future" element={<FutureTrading />} />
+
+            {/* Optional auth pages */}
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
 
@@ -29,82 +35,6 @@ export default function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
 
-            {/* Protected Home */}
-            <Route 
-              path="/" 
-              element={
-                <>
-                  <SignedIn>
-                    <Home />
-                  </SignedIn>
-                  <SignedOut>
-                    <Navigate to="/login" replace />
-                  </SignedOut>
-                </>
-              } 
-            />
-            
-            {/* Protected Dashboard */}
-            <Route 
-              path="/dashboard" 
-              element={
-                <>
-                  <SignedIn>
-                    <Dashboard />
-                  </SignedIn>
-                  <SignedOut>
-                    <Navigate to="/login" replace />
-                  </SignedOut>
-                </>
-              } 
-            />
-
-            {/* Protected AI Predict */}
-            <Route 
-              path="/ai-predict" 
-              element={
-                <>
-                  <SignedIn>
-                    <AiPredict />
-                  </SignedIn>
-                  <SignedOut>
-                    <Navigate to="/login" replace />
-                  </SignedOut>
-                </>
-              } 
-            />
-
-            {/* Protected Market Watch */}
-            <Route 
-              path="/market-watch" 
-              element={
-                <>
-                  <SignedIn>
-                    <MarketWatch />
-                  </SignedIn>
-                  <SignedOut>
-                    <Navigate to="/login" replace />
-                  </SignedOut>
-                </>
-              } 
-            />
-
-            {/* Protected Future Trading */}
-            <Route 
-              path="/future" 
-              element={
-                <>
-                  <SignedIn>
-                    <FutureTrading />
-                  </SignedIn>
-                  <SignedOut>
-                    <Navigate to="/login" replace />
-                  </SignedOut>
-                </>
-              } 
-            />
-
-            {/* Catch all - redirect to home */}
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
